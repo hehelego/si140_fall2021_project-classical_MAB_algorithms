@@ -5,8 +5,21 @@
 \usepackage[a4paper, total={170mm,257mm}, left=20mm, top=20mm]{geometry}
 
 % \usepackage[margin=0.3cm]{geometry}
+\usepackage{hyperref}
+\hypersetup{ colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+\urlstyle{same}
 
-\usepackage{biblatex}
+\usepackage[
+   backend=biber,
+   style=alphabetic,
+   sorting=ynt
+]{biblatex}
 \addbibresource{ref.bib}
 
 \usepackage{fancyhdr}
@@ -38,5 +51,8 @@
 
 \newpage
 \appendix
-\printbibliography
+\printbibliography[
+	heading=bibintoc,
+	title={reference}
+]
 \end{document}
