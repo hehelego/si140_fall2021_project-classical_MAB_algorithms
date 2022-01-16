@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{pdfpages}
 \usepackage{xeCJK}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -248,4 +249,8 @@
 	heading=bibintoc,
 	title={reference}
 ]
+\includepdf[
+	pages=-,
+	addtotoc={1, section, 1, Python Implementation and Simulation, ipynb}
+]{MAB.pdf}
 \end{document}
